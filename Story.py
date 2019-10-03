@@ -1,6 +1,16 @@
 #Make a story assignment
 #Claire Menard
+
+import random as r
+
+def endGameRandom():
+	num = r.randint(0,10)
+	if num <=2:
+		print("END OF GAME: random chance.")
+		exit()
+
 while 1:
+	endGameRandom()
 	try:
 		choice1 = str(input("\nPart 1: It's your first day in your new lab! What's the first thing you want to do in your new role as research assistant? \n\n1. Check your email. \n2. Begin a new experiment. \n\nEnter 1 or 2: \n"))
 		if choice1 == '2':
